@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>xnsquad - best rat squad</title>
-<meta name="description" content="dsc.gg/xnraters">
+<title>xnsquad best squad</title>
+<meta name="description" content="best squad raters">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -166,6 +166,18 @@
     box-shadow:0 18px 44px -12px rgba(196,181,253,.95);
     background:linear-gradient(135deg,#a855f7 0%,#c4b5fd 50%,#e9d5ff 100%);
   }
+  .btn-ghost{
+    background:rgba(196,181,253,.05);
+    color:#e9d5ff;
+    border:1px solid rgba(196,181,253,.35);
+    backdrop-filter:blur(8px);
+  }
+  .btn-ghost:hover{
+    transform:translateY(-3px);
+    background:rgba(196,181,253,.14);
+    border-color:rgba(196,181,253,.7);
+    box-shadow:0 14px 40px -14px rgba(168,85,247,.8);
+  }
 
   .ticker{
     border-top:1px solid var(--border);border-bottom:1px solid var(--border);
@@ -286,6 +298,9 @@
     -webkit-text-fill-color:transparent;
     filter:drop-shadow(0 0 25px rgba(168,85,247,.5));
   }
+  .join-btns{
+    display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:38px;
+  }
 
   footer{
     border-top:1px solid var(--border);
@@ -333,7 +348,7 @@
     .burger{z-index:200}
     .section-pad{padding:84px 0}
     .join-card{padding:52px 24px}
-    .hero-btns .btn{width:100%;max-width:320px}
+    .hero-btns .btn,.join-btns .btn{width:100%;max-width:320px}
   }
 
   @media (max-width:480px){
@@ -351,10 +366,11 @@
 
 <header class="nav" id="nav">
   <div class="nav-inner">
-    <a href="#home" class="logo">XN<span>SQUAD</span></a>
+    <a href="#home" class="logo">xn<span>squad</span></a>
     <nav class="nav-links" id="navLinks">
       <a href="#admins">Админы</a>
       <a href="#join">Вступить</a>
+      <a href="https://xnsquad.github.io/files" target="_blank" rel="noopener">Файлы</a>
     </nav>
     <button class="burger" id="burger" aria-label="Открыть меню">
       <span></span><span></span><span></span>
@@ -368,18 +384,19 @@
   <div class="glow g2"></div>
 
   <div class="hero-inner">
-    <h1 class="hero-title">XNSQUAD</h1>
+    <h1 class="hero-title">xnsquad</h1>
     <div class="hero-btns">
       <a href="https://dsc.gg/xnraters" target="_blank" rel="noopener" class="btn btn-primary">Вступить в сквад</a>
+      <a href="https://xnsquad.github.io/files" target="_blank" rel="noopener" class="btn btn-ghost">Файлы</a>
     </div>
   </div>
 </section>
 
 <div class="ticker">
   <div class="ticker-track" id="ticker">
-    <span>XNSQUAD</span><span>★</span>
-    <span>RATING</span><span>★</span>
-    <span>TOP TIER</span><span>★</span>
+    <span>xnsquad</span><span>★</span>
+    <span>rating</span><span>★</span>
+    <span>best squad</span><span>★</span>
   </div>
 </div>
 
@@ -412,10 +429,11 @@
 <section class="section-pad" id="join">
   <div class="container">
     <div class="join-card reveal">
-      <h2>Хочешь в <em>XNSQUAD</em>?</h2>
+      <h2>Хочешь в <em>xnsquad</em>?</h2>
 
-      <div style="margin-top:38px">
+      <div class="join-btns">
         <a href="https://dsc.gg/xnraters" target="_blank" rel="noopener" class="btn btn-primary">Зайти в сквад</a>
+        <a href="https://xnsquad.github.io/files" target="_blank" rel="noopener" class="btn btn-ghost">Файлы</a>
       </div>
     </div>
   </div>
@@ -430,9 +448,8 @@
       </div>
       <div class="socials">
         <a href="https://dsc.gg/xnraters" target="_blank" rel="noopener" class="social" title="Discord">DC</a>
-        <a href="#" class="social" title="Telegram">TG</a>
-        <a href="#" class="social" title="YouTube">YT</a>
-        <a href="#" class="social" title="Twitch">TW</a>
+        <a href="https://t.me/xnsquad" target="_blank" rel="noopener" class="social" title="Telegram">TG</a>
+        <a href="https://www.youtube.com/@XNSQUADRAT" target="_blank" rel="noopener" class="social" title="YouTube">YT</a>
       </div>
     </div>
   </div>
